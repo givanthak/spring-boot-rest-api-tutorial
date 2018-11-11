@@ -10,7 +10,7 @@ https://github.com/givanthak/spring-boot-rest-api-tutorial.git
 
 **2. Create Mysql database**
 ```bash
-create database user_databasee
+create database user_database
 ```
 
 **3. Change mysql username and password as per your installation**
@@ -23,7 +23,7 @@ create database user_databasee
 
 ```bash
 mvn package
-java -jar target/easy-notes-1.0.0.jar
+java -jar target/spring-boot-rest-api-tutorial-1.0.0.jar
 ```
 
 Alternatively, you can run the app without packaging it using -
