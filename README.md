@@ -48,10 +48,6 @@ The app defines following CRUD APIs.
     
     DELETE /api/v1/users/{userId}
 
-You can test them using postman or any other rest client.
-
-## Learn more
-
 You can find the tutorial for this application on my blog -
 
 <https://www.prathapgivantha.wordpress.com>
