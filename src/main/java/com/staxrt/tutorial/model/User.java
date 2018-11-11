@@ -51,7 +51,7 @@ public class User {
     private String lastName;
 
     @Column(name = "email_address", nullable = false)
-    private String emailId;
+    private String email;
 
     @Column(name = "created_at", nullable = false)
     @CreatedDate
@@ -67,7 +67,7 @@ public class User {
 
     @Column(name = "updated_by", nullable = false)
     @LastModifiedBy
-    private String updatedby;
+    private String updatedBy;
 
   /**
    * Gets id.
@@ -124,21 +124,21 @@ public class User {
     }
 
   /**
-   * Gets email id.
+   * Gets email.
    *
-   * @return the email id
+   * @return the email
    */
-  public String getEmailId() {
-        return emailId;
+  public String getEmail() {
+        return email;
     }
 
   /**
-   * Sets email id.
+   * Sets email.
    *
-   * @param emailId the email id
+   * @param email the email
    */
-  public void setEmailId(String emailId) {
-        this.emailId = emailId;
+  public void setEmail(String email) {
+        this.email = email;
     }
 
   /**
@@ -196,21 +196,21 @@ public class User {
     }
 
   /**
-   * Gets updatedby.
+   * Gets updated by.
    *
-   * @return the updatedby
+   * @return the updated by
    */
-  public String getUpdatedby() {
-        return updatedby;
+  public String getUpdatedBy() {
+        return updatedBy;
     }
 
   /**
-   * Sets updatedby.
+   * Sets updated by.
    *
-   * @param updatedby the updatedby
+   * @param updatedBy the updated by
    */
-  public void setUpdatedby(String updatedby) {
-        this.updatedby = updatedby;
+  public void setUpdatedBy(String updatedBy) {
+        this.updatedBy = updatedBy;
     }
 
     @Override
@@ -219,11 +219,11 @@ public class User {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", emailId='" + emailId + '\'' +
+                ", email='" + email + '\'' +
                 ", createdAt=" + createdAt +
                 ", createdBy='" + createdBy + '\'' +
                 ", updatedAt=" + updatedAt +
-                ", updatedby='" + updatedby + '\'' +
+                ", updatedby='" + updatedBy + '\'' +
                 '}';
     }
 
