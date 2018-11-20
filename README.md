@@ -1,3 +1,5 @@
+<a href="https://snyk.io/test/github/givanthak/spring-boot-rest-api-tutorial"><img src="https://snyk.io/test/github/givanthak/spring-boot-rest-api-tutorial/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/givanthak/spring-boot-rest-api-tutorial" style="max-width:100%;"></a>
+
 # Sample REST CRUD API with Spring Boot, Mysql, JPA and Hibernate 
 
 ## Steps to Setup
