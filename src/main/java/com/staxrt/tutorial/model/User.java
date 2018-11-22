@@ -20,6 +20,8 @@
 
 package com.staxrt.tutorial.model;
 
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
@@ -53,16 +55,18 @@ public class User {
     @Column(name = "email_address", nullable = false)
     private String email;
 
+    @CreationTimestamp
+    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "created_at", nullable = false)
-    @CreatedDate
     private Date createdAt;
 
     @Column(name = "created_by", nullable = false)
     @CreatedBy
     private String createdBy;
 
+    @UpdateTimestamp
+    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "updated_at", nullable = false)
-    @LastModifiedDate
     private Date updatedAt;
 
     @Column(name = "updated_by", nullable = false)
