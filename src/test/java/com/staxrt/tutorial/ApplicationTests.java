@@ -23,7 +23,7 @@ public class ApplicationTests {
 	private int port;
 
 	private String getRootUrl() {
-		return "http://localhost:" + port;
+		return "http://localhost:" + port + "/api/v1";
 	}
 
 	@Test
