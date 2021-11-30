@@ -1,0 +1,13 @@
+
+replicaCount: 1
+containePort: 8080
+namespace: develop
+image:
+  repository: 609474515704.dkr.ecr.us-east-1.amazonaws.com/springbootapp
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+imagePullSecrets: []
+service:
+  type: LoadBalancer
+  port: 80
